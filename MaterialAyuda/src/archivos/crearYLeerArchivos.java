@@ -6,7 +6,7 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 //Declarar la clase llamada "crearArchivos"
-public class crearArchivos {
+public class crearYLeerArchivos {
 
  // Método principal que se ejecuta cuando se inicia el programa
  public static void main(String ars[]) {
