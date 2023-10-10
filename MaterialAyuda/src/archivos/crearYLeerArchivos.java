@@ -43,6 +43,9 @@ public class crearYLeerArchivos {
      try {
 
          // Especificar la ruta del archivo en la que se guardaran los datos
+    	 // NO olvidarse de escribir el nombre del archivo, y luego .txt
+    	 // En este caso, si mi_archivo.txt no lo agregamos a la ruta, 
+    	 // Java NO va a identificar ningún archivo .txt
          String ruta = "C:\\Users\\seeba\\Desktop\\mi_archivo.txt";
 
          // Crear un objeto "file" que representa el archivo en la ruta especificada
