@@ -15,12 +15,17 @@ public class crearYLeerArchivos {
      Scanner entrada = new Scanner(System.in);
 
      // Declarar dos arreglos de cadenas de texto llamados "nombre" y "apellido" con
-     // espacio para 3 elementos cada uno
+     // espacio para 3 elementos cada uno.
+     // Recordar: se define el tipo de array (String en este caso), luego se colocan
+     // corchetes [], despues el nombre del array (nombre, y apellido en los ejemplos
+     // de abajo), y del otro lado de la igualdad
+     //se coloca "new" "Tipo de array"[cantidad de elementos]
+   
      String[] nombre = new String[3];
      String[] apellido = new String[3];
 
      // Mostrar un mensaje en la consola
-     System.out.println("INGRESA CUATRO NOMBRES Y APELLIDOS ");
+     System.out.println("INGRESA TRES NOMBRES Y APELLIDOS ");
 
      // Iniciar un ciclo "for" que se ejecutara 3 veces
      for (int i = 0; i < 3; i++) {
