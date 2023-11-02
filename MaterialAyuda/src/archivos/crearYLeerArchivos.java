@@ -72,6 +72,7 @@ public class crearYLeerArchivos {
          }
 
          // Crear un objeto "fw" de tipo FileWriter para escribir en el archivo
+         // Este objeto nos permite llenar el archivo de información. 
          FileWriter fw = new FileWriter(file);
 
          // Crear un objeto "bw" de tipo BufferedWriter para escribir en el archivo de
@@ -87,7 +88,7 @@ public class crearYLeerArchivos {
              // Agregar una nueva linea (un salto de linea) despues de cada entrada
              bw.newLine();
          }
-System.out.println("hola");
+
          // Cerrar el BufferedWriter para finalizar la escritura en el archivo
          // Si no se cierra el bufer, no se genera el archivo.
          bw.close();
