@@ -28,6 +28,10 @@ public class crearYLeerArchivos {
      System.out.println("INGRESA TRES NOMBRES Y APELLIDOS ");
 
      // Iniciar un ciclo "for" que se ejecutara 3 veces
+     // "i" es una variable para recorrer los arrays.
+     // "i" comienza en 0, y termina en 2. Son tres elementos por array: 
+     // Primer elemento en la posicion 0, segundo en la posicion 1, y tercero
+     // en la posicion 2. 
      for (int i = 0; i < 3; i++) {
 
          // Mostrar un mensaje pidiendo al usuario ingresar un nombre y leer la entrada
@@ -36,6 +40,9 @@ public class crearYLeerArchivos {
 
          // Mostrar un mensaje pidiendo al usuario ingresar un apellido y leer la entrada
          System.out.println("Ingresa el apellido numero: " + (i + 1));
+         // El (i+1) es porque los arrays comienzan a guardar en la posicion 0.
+         // Entonces (i+1) hace que al principio NO se muestre "numero 0" sino
+         // "numero 1". Recordar que "i" es una variable para recorrer los arrays.
          apellido[i] = entrada.next();
 
          // Mostrar una línea en blanco para separar las entradas de nombre y apellido
@@ -45,6 +52,9 @@ public class crearYLeerArchivos {
      // ----------ESCRIBIR EL CONTENIDO EN UN ARCHIVO .TXT
 
      // Iniciar un bloque "try-catch" para manejar posibles errores
+     // "Try" INTENTA ejecutar el codigo que contiene entre llaves {}.
+     // "Catch" CAPTURA errores.
+     //
      try {
 
          // Especificar la ruta del archivo en la que se guardaran los datos
@@ -65,7 +75,8 @@ public class crearYLeerArchivos {
          FileWriter fw = new FileWriter(file);
 
          // Crear un objeto "bw" de tipo BufferedWriter para escribir en el archivo de
-         // manera eficiente
+         // manera eficiente. Esto es como que "limpia" el archivo para ser escrito
+         // con los datos que se cargaron en los arrays "nombre" y "apellido".
          BufferedWriter bw = new BufferedWriter(fw);
 
          // Iniciar un ciclo "for" que se ejecutara 3 veces
@@ -73,10 +84,10 @@ public class crearYLeerArchivos {
              // Escribir en el archivo una linea que contiene el nombre y el apellido
              bw.write("Nombre: " + nombre[i] + ", Apellido: " + apellido[i]);
 
-             // Agregar una nueva linea despues de cada entrada
+             // Agregar una nueva linea (un salto de linea) despues de cada entrada
              bw.newLine();
          }
-
+System.out.println("hola");
          // Cerrar el BufferedWriter para finalizar la escritura en el archivo
          // Si no se cierra el bufer, no se genera el archivo.
          bw.close();
@@ -87,6 +98,8 @@ public class crearYLeerArchivos {
      } catch (Exception e) {
          // En caso de un error, mostrar informacion detallada sobre el error en la
          // consola
+    	 // Aca en vez de "e.printStackTrace" se podría poner un "syso" 
+    	 // que indique "Error al escribir el archivo". 
          e.printStackTrace();
      }
 
