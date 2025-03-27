@@ -1,6 +1,6 @@
-package sentencia_if_else;
+package Sentencia_If;
 
-public class E_EjemploIfAnidados {
+public class ejemploIfAnidados {
 	public static void main(String[] args) {
 		/*
 		 * OBJETIVO: analizar si una persona tiene la cuenta de Mercado Pago habilitada.

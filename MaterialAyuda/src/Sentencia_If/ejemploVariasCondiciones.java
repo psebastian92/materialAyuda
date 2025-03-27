@@ -1,8 +1,8 @@
-package sentencia_if_else;
+package Sentencia_If;
 
 import java.util.Scanner;
 
-public class D_EjemploVariasCondiciones {
+public class ejemploVariasCondiciones {
 
 	public static void main(String[] args) {
 		Scanner datos = new Scanner(System.in);

@@ -1,8 +1,8 @@
-package sentencia_if_else;
+package Sentencia_If;
 
 import java.util.Scanner;
 
-public class A_Ejemplo_Con_If {
+public class ejemplo_Con_If {
 	/* En programacion, una sentencia es una linea de comandos. 
 	  Por ejemplo: indicar que una variable es entera, o mostrar en 
 	  pantalla una frase, o determinar la funcion principal. Pero tambien
